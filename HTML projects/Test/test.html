@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Picture Generator</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: darkblue;
+        }
+
+        #picture-container {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        #random-picture {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="picture-container">
+        <img id="random-picture" src="#" alt="Random Picture">
+        <button onclick="getRandomPicture()">Generate Random Picture</button>
+    </div>
+
+    <script>
+        // Add your JavaScript code for Vue.js or other dynamic aspects here
+        // Function to fetch and display a random picture
+        function getRandomPicture() {
+            // Make an AJAX or Fetch request to your backend endpoint
+            // Update the 'src' attribute of the 'random-picture' element with the received picture URL
+        }
+    </script>
+</body>
+</html>
