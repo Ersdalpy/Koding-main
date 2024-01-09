@@ -1,0 +1,17 @@
+#Firstdiv{
+    border: solid 3px;
+    text-align: center;
+}
+.blueBG{
+    background-color: deepskyblue;
+}
+a:hover{
+    color: blanchedalmond;
+}
+@media screen and (min-width: 600px) {
+    .prof {
+        width: 30%;
+        float: left;
+        background-color: bisque;
+    }
+}
