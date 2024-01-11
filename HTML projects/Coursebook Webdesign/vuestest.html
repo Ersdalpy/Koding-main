@@ -8,7 +8,11 @@
 </head>
 <body>
 <!--VueTest-->
-<div id="app"> {{message}}</div>
+<div id="app">
+    <h1>{{ message }}</h1>
+    <label for="vmodel">This is the label for the message </label>
+    <input v-model="message" id="vmodel">
+</div>
 <script>
     const { createApp, ref } = Vue
 
