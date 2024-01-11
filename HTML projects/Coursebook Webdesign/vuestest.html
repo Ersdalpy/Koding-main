@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue test</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+<!--VueTest-->
+<div id="app"> {{message}}</div>
+<script>
+    const { createApp, ref } = Vue
+
+    createApp({
+        setup() {
+            const message = ref('Hello Vue! From Kenneth')
+            return {
+                message
+            }
+        }
+    }).mount('#app')
+</script>
+<!--Skoletest-->
+<!--     <div id="app">
+        <h1>{{ message }}</h1>
+    </div> -->
+</body>
+<!--Skoletest script-->
+<!-- <script>
+    var data = { message: 'Greetings from vue!'};
+    new Vue({
+        el:'#app',
+        data: data
+    });
+</script> -->
+<script src=""></script>
+</html>
