@@ -9,9 +9,12 @@
 <body>
 <!--VueTest-->
 <div id="app">
-    <h1>{{ message }}</h1>
+    <!-- Test1: -->
+ <!--    <h1>{{ message }}</h1>
     <label for="vmodel">This is the label for the message </label>
-    <input v-model="message" id="vmodel">
+    <input v-model="message" id="vmodel"> -->
+    <!-- Test2 -->
+    <div v-html="message"></div>
 </div>
 <script>
     const { createApp, ref } = Vue
@@ -29,14 +32,35 @@
 <!--     <div id="app">
         <h1>{{ message }}</h1>
     </div> -->
-</body>
-<!--Skoletest script-->
-<!-- <script>
-    var data = { message: 'Greetings from vue!'};
+    <!--Skoletest script-->
+<script>
     new Vue({
-        el:'#app',
-        data: data
+        el:"#app",
+        data: { message: "<h1> Greetings from the Vue v-html!</"}
     });
-</script> -->
-<script src=""></script>
+</script>
+ <!--    <div id="app">
+        <h1>You must type a message</h1>
+        <textarea v-model="message"></textarea>
+        <button v-show="message">Send message!</button>
+        <pre>
+                {{$data | json}}
+        </pre>
+    </div> -->
+<div id="app2">
+    <h1>You must type a message</h1>
+    <textarea v-model="message"></textarea>
+    <button v-show="message">Send message!</button>
+    <pre>
+        {{$data | json}}
+    </pre>
+</div>
+
+<script>
+    new Vue({
+        el: "#app2",
+        data: { message: "" },
+    });
+</script>
+</body>
 </html>
