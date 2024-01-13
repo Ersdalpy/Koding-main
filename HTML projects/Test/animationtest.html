@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation test</title>
+    <style>
+        #divani{
+            width: 50px;
+            height: 50px;
+            background-color: blueviolet;
+            animation-name: colorchange;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes colorchange{
+                0% {background-color: red;}
+                25% {background-color: blue;}
+                50% {background-color: green;
+                    transform: rotate(45deg);
+                    }
+                100% {background-color: yellow;}
+            }
+    </style>
+</head>
+<body>
+    <div id="divani"></div>
+</body>
+</html>
